@@ -1,0 +1,369 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* ***********************header*********** */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+video {
+    height: 100%;
+    object-fit: cover;
+}
+
+#myvideo {
+    height: 80vh;
+    
+}
+
+
+.icon {
+    display: flex;
+    gap: 10px;
+    color: black;
+}
+
+.icon>i {
+    font-size: 2.5rem;
+    color: red;
+}
+
+.header {
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+    padding: 10px;
+}
+
+.home {
+    display: flex;
+    gap: 20px;
+}
+
+.home>a {
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+}
+
+
+/* ***************courses************ */
+.slide2 {
+    display: flex;
+    padding: 50px;
+    gap: 25px;
+    justify-content: center;
+    background-color: rgb(232, 247, 247);
+
+}
+
+.education {
+    width: 500px;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+#h2 {
+    font-size: 2.2rem;
+    color: #07332c;
+    ;
+    ;
+
+}
+
+#p {
+    line-height: 1.8;
+    font-size: 1.2rem;
+
+}
+
+.education>button {
+    background-color: brown;
+    color: white;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+
+.image {
+    background-image: url('./girls.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+    height: 380px;
+    border-radius: 10px;
+}
+
+.image2 {
+    background-image: url('./girls.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+    height: 380px;
+    border-radius: 10px;
+    display: none;
+}
+
+.slide2>.image:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 9px;
+
+}
+
+.slide4 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100vw;
+    padding: 20px;
+    margin-top: 70px;
+}
+
+.unlesh {
+    width: 850px;
+
+}
+
+.course>h2{
+    display:block;
+    margin-bottom: 0px;
+    background-color:lightslategray ;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.courses {
+    display: flex;
+    padding: 50px 70px 30px 70px;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: lightslategray;
+
+}
+
+section {
+    flex-basis: 100%;
+    background-color: aliceblue;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+}
+
+section:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 9px;
+}
+
+section>h4 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* *************************images************* */
+
+.campuses {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 50px 70px 30px 70px;
+    background: rgb(21, 21, 22);
+
+}
+.our{
+    text-align: center;
+    width: 100%;
+    background-color:rgb(21, 21, 22);
+    margin-bottom: 0px;
+    color: white;
+    padding-top: 50px;
+
+    
+}
+
+.images {
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+}
+
+.images>h3 {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.images:hover>h3 {
+    opacity: 1;
+}
+
+.hyd {
+    background-image: url('./pune.jpeg');
+
+}
+
+.bengulru {
+    background-image: url('./bengulu.jpeg');
+
+}
+
+.Mumbai {
+    background-image: url('./good2.jpeg');
+}
+
+.Maharastra {
+    background-image: url('./good3.jpeg');
+}
+
+.Delhi {
+    background-image: url('./good4.jpeg');
+}
+
+.Chennai {
+    background-image: url('./good6.jpeg');
+}
+
+.Punjab {
+    background-image: url('./good5.webp');
+}
+
+.Haryana {
+    background-image: url('./header.jpeg');
+}
+
+/* **************OUR FACILITIES************ */
+
+.canteen {
+    width: 100%;
+    height: 200px;
+    background-color: aliceblue;
+}
+
+sections {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+
+sections:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 9px;
+
+}
+
+sections>h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+
+}
+
+sections>p {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}
+
+
+
+@media (width >=600px) {
+    section {
+        flex: 1 1 30%;
+
+    }
+
+    sections {
+        flex: 1 1 20%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .slide2 {
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .education {
+        width: 355px;
+        overflow: auto;
+        scrollbar-width: none;
+        margin-bottom: 10px;
+    }
+.education>p{
+    word-break:break-all;
+}
+    .campuses {
+
+        grid-template-columns: 1fr;
+    }
+
+    #h2 {
+        font-size: 1.3rem;
+        color: red;
+    }
+
+    .education>#p {
+        line-height: 1.05;
+        font-size: 1rem;
+
+    }
+
+    .image2 {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 240px;
+        margin-bottom: 10px;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .slide4 {
+        margin-top: 30px;
+    }
+
+    .slide4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .unlesh {
+        width: 400px;
+        padding: 0px 30px 0px 30px;
+
+    }
+
+    .unlesh>#h2 {
+        font-size: 1.3rem;
+    }
+
+    .unlesh>#p {
+        font-size: 1rem;
+        line-height: 1.1;
+    }
+
+    .unlesh {
+        width: 300px;
+
+    }
+}

@@ -1,0 +1,118 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+img{
+    width: 100%;
+    height: 100vh;
+}
+
+/* ********************courses********** */
+.course>h2 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.courses {
+    display: flex;
+    padding:70px 30px 70px;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+section {
+    flex-basis: 100%;
+    background-color:rgb(247, 171, 171);
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+}
+
+section:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 9px;
+}
+
+section>h4 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* *************************images************* */
+.campuses {
+    padding: 50px 70px 30px 70px;
+}
+
+.images {
+    width: 80%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+.images>h3{
+    opacity: 0;
+    transition:opacity 0.3s ease;
+}
+.images:hover>h3{
+    opacity: 1;
+}
+.hyd {
+    background-image: url('./pune.jpeg');
+}
+
+.bengulru {
+    background-image: url('./bengulu.jpeg');
+}
+
+.pune {
+    background-image: url('./college.jpeg');
+}
+/* **************OUR FACILITIES************ */
+
+img{
+width: 100%;
+border-radius: 5px;
+height: 200px;
+}
+sections {
+    flex-basis: 80%;
+    flex-wrap: wrap;
+}
+sections:hover{
+    transform: scale(1.05);
+}
+sections>h4{
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+@media (width >=600px) {
+    section{
+        flex: 1 1 30%;
+
+    }
+    sections{
+        flex: 1 1 20%;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .details>a {
+        display: none;
+    }
+
+    .content>h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        margin-left: 20px;
+    }
+}
